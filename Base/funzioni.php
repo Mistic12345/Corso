@@ -24,13 +24,19 @@ function nomeF(){
 //saluta();
 
   // Chiamiamo la nostra funzione saluta
-  echo saluta("Moussa");          // Ciao Moussa
-  echo saluta("Moussa", "en");    // Hello Moussa
+  echo saluta("Moussa") . "<br>";          // Ciao Moussa
+  echo saluta("Moussa", "en") . "<br>";    // Hello Moussa
+
 
 function somma(int $num1, int $num2): int { 
-    $sum = $num1 + $num2; 
-    return $sum; 
-} 
+    if ($num1 == 0 && $num2 == 0) {
+        // Entrambi i numeri sono zero
+        return 0; 
+    }
+    
+    return $num1 + $num2;
+}
 
-echo "50+10 = " . somma(50, 10) . "<br>"; 
+echo somma(50, 20); 
+
 ?>
