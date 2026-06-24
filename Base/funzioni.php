@@ -27,10 +27,10 @@ function nomeF(){
   echo saluta("Moussa");          // Ciao Moussa
   echo saluta("Moussa", "en");    // Hello Moussa
 
-function somma(int $num1,int $num2 = 0): int
-{
-    return $num1 + $num2;
-}
+function somma(int $num1, int $num2): int { 
+    $sum = $num1 + $num2; 
+    return $sum; 
+} 
 
-echo somma(525 + 52);
+echo "50+10 = " . somma(50, 10) . "<br>"; 
 ?>
